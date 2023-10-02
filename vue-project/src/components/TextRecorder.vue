@@ -53,7 +53,7 @@ export default {
         const formData = new FormData();
         formData.append('audio', data.blob, `voice_${this.index}.mp3`);
         
-        axios.post('http://117.161.233.94:5000/upload', formData, {
+        axios.post('https://eagle-notable-adequately.ngrok-free.app/upload', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
